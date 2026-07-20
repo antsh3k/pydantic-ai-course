@@ -1,0 +1,21 @@
+# Environment variables
+.env
+
+# Python
+*.pyc
+__pycache__/
+
+# Virtual environments
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Ruff
+.ruff_cache/
+
+# MLflow
+mlruns/
+
+# MacOS files
+.DS_Store

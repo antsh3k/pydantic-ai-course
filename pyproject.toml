@@ -1,0 +1,52 @@
+[project]
+name = "pydantic-ai-course"
+version = "0.1.0"
+description = "A hands-on course for learning PydanticAI, the Python agent framework built on Pydantic."
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+authors = [{ name = "Faculty AI" }]
+keywords = ["pydantic", "pydantic-ai", "llm", "agents", "course", "tutorial"]
+dependencies = [
+    "tabulate>=0.10.0",
+    "ipykernel>=7.1.0",
+    "ipywidgets>=8.1.8",
+    "loguru>=0.7.3",
+    "mlflow>=3.10.1",
+    "openai>=2.14.0",
+    "pydantic-evals[logfire]>=1.39.0",
+    "pydantic-settings>=2.12.0",
+    "pydantic-ai-slim[logfire,openai,retries]>=1.39.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/facultyai/pydantic-ai-course"
+Repository = "https://github.com/facultyai/pydantic-ai-course"
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.5.1",
+    "ruff>=0.14.0",
+    "nbstripout>=0.9.0",
+    "detect-secrets>=1.5.0",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+extend-include = ["*.ipynb"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+
+[tool.ruff.lint.per-file-ignores]
+# Teaching notebooks intentionally have unused/re-imports, imports mid-file,
+# names defined in later exercise cells, and whitespace in sample-data strings.
+"*.ipynb" = ["E402", "E501", "F401", "F811", "F821", "W291", "W293"]
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.codespell]
+skip = "uv.lock,*.lock,.secrets.baseline,session4_product_naming_briefs.json"
+ignore-words-list = "socio-economic"

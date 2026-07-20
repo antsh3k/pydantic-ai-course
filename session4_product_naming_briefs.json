@@ -1,0 +1,22 @@
+[
+  {
+    "brief_name": "trail_canteen",
+    "brief_text": "Outdoor brand launching a vacuum-insulated stainless bottle for hikers. Audience: weekend trail runners and backpackers. Tone: rugged, trustworthy, not macho. Need a memorable product name and a one-line tagline for the packaging."
+  },
+  {
+    "brief_name": "invoice_api",
+    "brief_text": "B2B SaaS that exposes a REST API for sending and reconciling invoices. Developers are the buyer. Tone: precise and developer-friendly, not corporate fluff. Product name plus a short tagline for the docs landing page."
+  },
+  {
+    "brief_name": "kids_sleep_app",
+    "brief_text": "Mobile app with gentle stories and soundscapes to help children aged 4–9 wind down. Parents subscribe monthly. Tone: warm, reassuring, never scary. Name and tagline for the App Store listing."
+  },
+  {
+    "brief_name": "desk_ergo_mat",
+    "brief_text": "Anti-fatigue standing-desk mat with subtle texture for barefoot and shoe use. Sold DTC online. Tone: modern wellness, not clinical. Product name and tagline for the product page hero."
+  },
+  {
+    "brief_name": "local_csabox",
+    "brief_text": "Neighborhood CSA-style box: weekly produce from farms within 50 miles, pickup at a community hub. Tone: community-forward, fresh, local. Name and tagline for the signup flyer."
+  }
+]
